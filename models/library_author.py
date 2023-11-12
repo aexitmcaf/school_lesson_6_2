@@ -5,8 +5,8 @@ class LibraryAuthor(models.Model):
     _name = 'library.author'
     _description = 'Library Book Authors'
 
-    first_name = fields.Char(required=True, string=_("First name"))
-    last_name = fields.Char(required=True, string=_("Last name"))
+    first_name = fields.Char(required=True, string=_("First name"), translate=True)
+    last_name = fields.Char(required=True, string=_("Last name"), translate=True)
     birth_date = fields.Date('Birthday')
 
     def name_get(self):
